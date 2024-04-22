@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quote-box {
+    margin: 19%;
+    border: 2px solid rgb(252, 247, 252);
+    padding: 20px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.quote-box h1{
+    color: rgb(39, 28, 28);
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: underline;
+}
+.quote-box blockquote{
+    color: rgb(20, 19, 19);
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+}
+.quote-box author{
+    color: rgb(39, 28, 28);
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: end;
+}
+.btn {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 10px;
+    margin: 5px
+}
+.btn button{
+    padding: 15px 25px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: rgb(62, 62, 231);
+    color: whitesmoke;
+    border: none;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn button:hover{
+    cursor: pointer;
+}
+.btn button:nth-child(2){
+    display: inline-block;
+    justify-content: space-between;
+    background-color: white;
+    color: rgb(28, 28, 30);
+    font-size: 16px;
+    padding: 15px 30px;
+}
+.btn img{
+    width: 30px;
+    padding-right: 10px;
+}
+.btn span{
+    padding: 5px;
+}
