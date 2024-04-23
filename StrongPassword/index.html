@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputPass">
+            <input type="password" id="password" placeholder="Password">
+            <img src="arrow.png" alt="arrow">
+        </div>
+        <p id="message"></p>
+    </div>
+    <script>
+        const pass = document.getElementById("password");
+        const msg = document.getElementById("message");
+        pass.addEventListener('input', () => {
+            if(pass.value.length < 4){
+                msg.innerHTML = "Password is Weak";
+                pass.style.borderColor = "red";
+                msg.style.color = "red";
+            } else if(pass.value.length >= 4 && pass.value.length < 8){
+                msg.innerHTML = "Password is Medium";
+                pass.style.borderColor = "orange";
+                msg.style.color = "orange";
+            } else {
+                msg.innerHTML = "Password is Strong";
+                pass.style.borderColor = "green";
+                msg.style.color = "green";
+            }
+        })
+    </script>
+</body>
+</html>
